@@ -1,3 +1,11 @@
 .home {
     display:flex ;
 }
+
+.outlet {
+    flex:9
+}
+
+.sidebar {
+    flex:3
+}

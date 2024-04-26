@@ -1,18 +1,21 @@
-import React from "react";
-import Header from "../../components/header/Header";
-import Posts from "../../components/posts/posts";
 import Sidebar from "../../components/sidebar/Sidebar";
+import Topbar from "../../components/topbar/Topbar";
+import { Outlet } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
     return (
-        <>
-            <Header />
+        <div>
+            <Topbar />
             <div className="home">
-                <Posts />
-                <Sidebar />
+                <div className="outlet">
+                    <Outlet />
+                </div>
+                <div className="sidebar">
+                    <Sidebar />
+                </div>
             </div>
-        </>
+        </div>
     );
 };
 

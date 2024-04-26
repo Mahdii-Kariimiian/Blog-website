@@ -4,6 +4,7 @@ import { FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Topbar = () => {
     return (
@@ -16,19 +17,31 @@ const Topbar = () => {
             </div>
             <div className="top-center">
                 <ul className="top-list">
-                    <li className="top-list-item">Home</li>
-                    <li className="top-list-item">About</li>
-                    <li className="top-list-item">Contact</li>
-                    <li className="top-list-item">Write</li>
-                    <li className="top-list-item">LOGOUT</li>
+                    <NavLink to="write" className="top-list-item">
+                        <li>Write</li>
+                    </NavLink>
+                    <NavLink to="/">
+                        <li className="top-list-item">Home</li>
+                    </NavLink>
+                    <NavLink to="about">
+                        <li className="top-list-item">About</li>
+                    </NavLink>
+                    <NavLink to="contact">
+                        <li className="top-list-item">Contact</li>
+                    </NavLink>
+                    <NavLink to="login">
+                        <li className="top-list-item">LOGOUT</li>
+                    </NavLink>
                 </ul>
             </div>
             <div className="top-right">
-                <img
-                    className="avatar"
-                    src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/002a3a48fdc5068e5b54139d478c5d5967d48d23_full.jpg"
-                    alt="Avatar"
-                />
+                <NavLink to='settings'>
+                    <img
+                        className="avatar"
+                        src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/002a3a48fdc5068e5b54139d478c5d5967d48d23_full.jpg"
+                        alt="Avatar"
+                    />
+                </NavLink>
                 <div className="top-search">
                     <FaSearch className="search-icon" />
                 </div>
