@@ -1,0 +1,40 @@
+import "./topbar.css";
+import { FaFacebook } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaPinterest } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
+
+const Topbar = () => {
+    return (
+        <div className="top">
+            <div className="top-left">
+                <FaFacebook className="top-icon" />
+                <FaTwitter className="top-icon" />
+                <FaInstagram className="top-icon" />
+                <FaPinterest className="top-icon" />
+            </div>
+            <div className="top-center">
+                <ul className="top-list">
+                    <li className="top-list-item">Home</li>
+                    <li className="top-list-item">About</li>
+                    <li className="top-list-item">Contact</li>
+                    <li className="top-list-item">Write</li>
+                    <li className="top-list-item">LOGOUT</li>
+                </ul>
+            </div>
+            <div className="top-right">
+                <img
+                    className="avatar"
+                    src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/002a3a48fdc5068e5b54139d478c5d5967d48d23_full.jpg"
+                    alt="Avatar"
+                />
+                <div className="top-search">
+                    <FaSearch className="search-icon" />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Topbar;
