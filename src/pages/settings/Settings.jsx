@@ -40,7 +40,7 @@ const Settings = () => {
                     <button className="settings-submit">Update</button>
                 </form>
             </div>
-            <Sidebar />
+            
         </div>
     );
 };

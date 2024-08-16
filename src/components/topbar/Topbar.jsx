@@ -17,11 +17,11 @@ const Topbar = () => {
             </div>
             <div className="top-center">
                 <ul className="top-list">
-                    <NavLink to="write" className="top-list-item">
-                        <li>Write</li>
-                    </NavLink>
                     <NavLink to="/">
                         <li className="top-list-item">Home</li>
+                    </NavLink>
+                    <NavLink to="write" className="top-list-item">
+                        <li>Write</li>
                     </NavLink>
                     <NavLink to="about">
                         <li className="top-list-item">About</li>

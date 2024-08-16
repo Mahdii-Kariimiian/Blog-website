@@ -5,7 +5,6 @@ const FirstPage = () => {
     return (
         <div>
             <Header />
-            <Posts />
         </div>
     );
 };

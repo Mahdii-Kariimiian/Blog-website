@@ -1,11 +1,12 @@
 .home {
-    display:flex ;
+    display: flex;
+    align-items: start;
 }
 
 .outlet {
-    flex:9
+    flex: 9;
 }
 
 .sidebar {
-    flex:3
+    flex: 3;
 }
